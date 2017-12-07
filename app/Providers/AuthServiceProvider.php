@@ -27,6 +27,23 @@ class AuthServiceProvider extends ServiceProvider
 
         $user = \Auth::user();
 
+        // Auth gates for: Biometric
+        Gate::define('biometric_access', function($user) {
+            return in_array($user->role_id, [1]);
+        });
+        Gate::define('biometric_view', function($user) {
+            return in_array($user->role_id, [1]);
+        });
+        Gate::define('biometric_create', function($user) {
+            return in_array($user->role_id, [1]);
+        });
+        Gate::define('biometric_update', function($user) {
+            return in_array($user->role_id, [1]);
+        });
+        Gate::define('biometric_delete', function($user) {
+            return in_array($user->role_id, [1]);
+        });
+
         // Auth gates for: Dashboard
         Gate::define('dashboard_access', function ($user) {
             return in_array($user->role_id, [1]);

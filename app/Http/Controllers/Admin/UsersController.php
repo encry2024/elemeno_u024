@@ -42,7 +42,7 @@ class UsersController extends Controller
         }
 
         $users      = User::where('role_id', 3)->get()->pluck('employee_id');
-        $roles      = Role::where('id', '!=', 3)->get()->pluck('title', 'id')->prepend('Please select', '');
+        $roles      = Role::all()->pluck('title', 'id')->prepend('Please select', '');
         $employees  = Employee::selectRaw('id, concat(fname," ",mname," ",lname) as name')
                     ->whereIn('id', $users)
                     ->get()->pluck('name', 'id')

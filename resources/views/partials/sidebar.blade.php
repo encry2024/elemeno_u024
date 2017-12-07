@@ -37,6 +37,7 @@
                         </a>
                     </li>
                 @endcan
+
                 @can('department_access')
                 <li class="{{ $request->segment(2) == 'department' ? 'active active-sub' : '' }}">
                         <a href="{{ route('admin.department.index') }}">
@@ -47,6 +48,7 @@
                         </a>
                     </li>
                 @endcan
+
                 @can('position_access')
                 <li class="{{ $request->segment(2) == 'position' ? 'active active-sub' : '' }}">
                         <a href="{{ route('admin.position.index') }}">
@@ -184,7 +186,8 @@
             </li>
             @endcan
             <!--  -->
-
+            
+            <!--  -->
             @can('user_management_access')
             <li class="treeview">
                 <a href="#">
@@ -206,6 +209,7 @@
                         </a>
                     </li>
                 @endcan
+
                 @can('user_access')
                 <li class="{{ $request->segment(2) == 'users' ? 'active active-sub' : '' }}">
                         <a href="{{ route('admin.users.index') }}">
@@ -219,6 +223,17 @@
                 </ul>
             </li>
             @endcan
+
+            <!--  -->
+            @can('biometric_access')
+            <li class="{{ $request->segment(1) == 'index' ? 'active' : '' }}">
+                <a href="{{ route('admin.biometric.index') }}">
+                    <i class="fa fa-hand-o-up" aria-hidden="true"></i>
+                    <span class="title">Biometric Management</span>
+                </a>
+            </li>
+            @endcan
+            <!--  -->
 
             <li class="{{ $request->segment(2) == 'reports' ? 'active active-sub' : '' }}">
                 <a href="{{ route('admin.reports.index') }}">
