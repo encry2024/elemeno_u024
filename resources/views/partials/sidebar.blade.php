@@ -223,7 +223,7 @@
                 </ul>
             </li>
             @endcan
-
+            
             <li class="{{ $request->segment(2) == 'reports' ? 'active active-sub' : '' }}">
                 <a href="{{ route('admin.reports.index') }}">
                     <i class="fa fa-line-chart"></i>

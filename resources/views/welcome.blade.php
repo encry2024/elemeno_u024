@@ -95,7 +95,6 @@
                             <li>Summary of payslip</li>
                         </ul> 
                         <a class="btn btn-default" href="{{ url('/employee/index') }}">VIEW</a>
-                        <a class="btn btn-default" href="{{ route('biometric.log') }}">LOGIN</a>
                     </div>
                 </div>  
 

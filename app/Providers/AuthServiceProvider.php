@@ -26,7 +26,7 @@ class AuthServiceProvider extends ServiceProvider
         $this->registerPolicies();
 
         $user = \Auth::user();
-
+        
         // Auth gates for: Dashboard
         Gate::define('dashboard_access', function ($user) {
             return in_array($user->role_id, [1]);
