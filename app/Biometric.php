@@ -11,7 +11,6 @@ class Biometric extends Model
 
    /**
     * Store Biometric Device Function
-    *
     * $request - Biometric Device information
     */
    public static function storeBiometricRequest($request)
