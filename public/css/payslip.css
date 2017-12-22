@@ -1,0 +1,232 @@
+.payslip{
+	position: relative;
+	width: 960px;
+	margin: 0 auto;
+}
+.payslip-img img{
+	width: 960px;
+}
+.payslip-content, .payslip-header{
+	position: absolute;
+}
+.payslip-header p{
+	 position: absolute;
+	 width: 300px;
+	 font-size: 12px;
+	 font-weight: bold;
+	 font-family: "arial";
+ }
+.payslip-content p{
+	position: absolute;
+	width: 95px;
+	font-size: 12px;
+	font-weight: bold;
+	font-family: "arial";
+	text-align: right;
+}
+.pay_em_name{
+	top: 102px; 
+	left: 140px;
+}
+.pay_em_no{
+	top: 118px; 
+	left: 140px;
+}
+.pay_period{
+	top: 135px; 
+	left: 140px;
+}
+.pay_basic{
+	top: 167px;
+	left: 150px; 
+}
+.pay_basic_late{
+	top: 185px;
+	left: 150px;
+}
+.pay_basic_allowance{
+	top: 205px;
+	left: 150px;
+}
+.pay_basic_net{
+	top: 225px;
+	left: 150px;
+}
+.pay_ecola{
+	top: 273px;
+	left: 150px;
+}
+.pay_ecola_absent{
+	top: 293px;
+	left: 150px;
+}
+.pay_ecola_net{
+	top: 313px;
+	left: 150px;
+}
+.pay_basic_gross{
+	top: 365px;
+	left: 150px;
+}
+.pay_deduct_tax{
+	top: 185px;
+	left: 395px;
+}
+.pay_deduct_sss{
+	top: 200px;
+	left: 395px;
+}
+.pay_deduct_philc{
+	top: 220px;
+	left: 395px;
+}
+.pay_deduct_hdmf{
+	top: 240px;
+	left: 395px;
+}
+.pay_deduct_loan{
+	top: 305px;
+	left: 395px;
+}
+.pay_deduct_advance{
+	top: 325px;
+	left: 395px;
+}
+.pay_deduct_total{
+	top: 365px;
+	left: 395px;
+}
+.pay_gross_pay{
+	top: 185px;
+	left: 558px;
+}
+.pay_total_deduction{
+	top: 185px;
+	left: 680px;
+}
+.pay_net_pay{
+	top: 185px;
+	left: 830px;
+}
+.pay_overtime{
+	top: 200px;
+	left: 558px;
+}
+.pay_total_pay{
+	top: 225px;
+	left: 830px;
+}
+
+@media print{
+	.noPrint{
+		display: none;
+	}
+	.yesPrint{
+		display: block;
+	}
+	.noBorder{
+		border: 0;
+	}
+	.payslip{
+		width: 100%;
+		margin: 0;
+	}
+	.payslip-header p{
+		font-size: 10px;
+	}
+	.payslip-content p{
+		font-size: 10px;
+	}
+	.pay_em_name {
+	    top: 72px;
+	    left: 100px;
+	}
+	.pay_em_no {
+	    top: 84px;
+	    left: 100px;
+	}
+	.pay_period {
+	    top: 96px;
+	    left: 100px;
+	}
+	.pay_basic {
+	    top: 120px;
+	    left: 80px;
+	}
+	.pay_basic_late {
+	    top: 132px;
+	    left: 80px;
+	}
+	.pay_basic_allowance {
+	    top: 144px;
+	    left: 80px;
+	}
+	.pay_basic_net {
+	    top: 159px;
+	    left: 80px;
+	}
+	.pay_ecola {
+	    top: 195px;
+	    left: 80px;
+	}
+	.pay_ecola_absent {
+	    top: 207px;
+	    left: 80px;
+	}
+	.pay_ecola_net {
+	    top: 222px;
+	    left: 80px;
+	}
+	.pay_basic_gross {
+	    top: 261px;
+	    left: 80px;
+	}
+	.pay_deduct_tax {
+	    top: 132px;
+	    left: 258px;
+	}
+	.pay_deduct_sss {
+	    top: 143px;
+	    left: 258px;
+	}
+	.pay_deduct_philc {
+	    top: 156px;
+	    left: 258px;
+	}
+	.pay_deduct_hdmf {
+	    top: 168px;
+	    left: 258px;
+	}
+	.pay_deduct_loan {
+	    top: 220px;
+	    left: 258px;
+	}
+	.pay_deduct_advance {
+	    top: 233px;
+	    left: 258px;
+	}
+	.pay_deduct_total {
+	    top: 259px;
+	    left: 258px;
+	}
+	.pay_gross_pay {
+	    top: 132px;
+	    left: 390px;
+	}
+	.pay_total_deduction {
+	    top: 132px;
+	    left: 470px;
+	}
+	.pay_net_pay {
+	    top: 132px;
+	    left: 575px;
+	}
+	.pay_overtime {
+	    top: 145px;
+	    left: 390px;
+	}
+	.pay_total_pay {
+	    top: 158px;
+	    left: 575px;
+	}
+}
